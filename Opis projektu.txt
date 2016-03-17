@@ -1,5 +1,5 @@
 To jest projekt dla Irka.
-System do sk³adania zamówieñ.
+System do sk?adania zam?wie?.
 		created by Robert Zuba
 pierwsza zmiana
 druga zmiana

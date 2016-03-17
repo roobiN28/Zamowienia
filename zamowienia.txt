@@ -7,7 +7,7 @@ Smith John 4 15 lustro 120
 Smith John 4 1 szafa 800
 Smith John 5 1 lustro 80
 Smith John 5 1 szafa 600
-Smith John 5 2 lustro 90 (tak, drugi raz lustro w zamówieniu w innej cenie)
+Smith John 5 2 lustro 90
 Omiotek Piotr 6 123 lustro 50
 Omiotek Piotr 6 1 szafa 540
 Omiotek Piotr 6 1 lustro 100
