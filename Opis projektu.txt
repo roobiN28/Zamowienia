@@ -1,0 +1,4 @@
+To jest projekt dla Irka.
+System do sk³adania zamówieñ.
+		created by Robert Zuba
+pierwsza zmiana
