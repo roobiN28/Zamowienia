@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 public class Main {
     private static OrderGetter orderGetter;
     public static void main(String[] args)  {
+        System.out.println("To sa poprawki");
         try {
             orderGetter = new OrderGetter("zamowienia.txt");
         } catch (FileNotFoundException e) {
