@@ -31,6 +31,10 @@ public class Order {
         return customer;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         StringBuilder order = new StringBuilder();
