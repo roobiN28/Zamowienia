@@ -16,6 +16,10 @@ public class Currency {
         return exchangeValue;
     }
 
+    public void setExchangeValue(double exchangeValue) {
+        this.exchangeValue = exchangeValue;
+    }
+
     public String getName() {
         return name;
     }

@@ -13,4 +13,8 @@ public class Tax {
     public double getTaxValue() {
         return taxValue;
     }
+
+    public void encreaseTax(int percent) {
+        taxValue += taxValue* (percent/100);
+    }
 }

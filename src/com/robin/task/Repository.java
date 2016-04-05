@@ -14,6 +14,9 @@ import java.util.List;
 public class Repository {
     private static Repository instance = new Repository();
     private List<Customer> listCustomer;
+
+    Currency defaultCurrency;
+
     public static Repository getInstance() {
         return instance;
     }
@@ -24,7 +27,11 @@ public class Repository {
         Tax polandTax = new Tax(20);
         Tax greatBritainTax = new Tax(40);
         Country poland = new Country("Poland","PL",pln,polandTax);
+        poland.setMaxPaymentValue(6000);
+        poland.setMinPaymentValue(10);
         Country greatBritain = new Country("Great Britain", "EN",gbp,greatBritainTax);
+        greatBritain.setMaxPaymentValue(1200);
+        greatBritain.setMinPaymentValue(10);
         Customer marcinTokar = new Customer("Marcin","Tokar",poland);
         Customer piotrOmiotek = new Customer("Piotr","Omiotek",poland);
         Customer johnSmith = new Customer("John", "Smith",greatBritain);
@@ -33,13 +40,18 @@ public class Repository {
         listCustomer.add(piotrOmiotek);
         listCustomer.add(johnSmith);
 
+        defaultCurrency = pln;
+
     }
-    Customer getCustomer(String firstName,String lastName) {
+    public Customer getCustomer(String firstName,String lastName) {
         for(Customer c : listCustomer) {
             if(firstName.equals(c.getFirstName()) && lastName.equals(c.getLastName())) {
                 return c;
             }
         }
         return null;
+    }
+    public Currency getDefaultCurrency () {
+        return defaultCurrency;
     }
 }
