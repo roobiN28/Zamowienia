@@ -1,7 +1,7 @@
 package com.robin.model;
 
 /**
- * Created by Rober on 17.03.2016.
+ * Created by Robert on 17.03.2016.
  */
 public class Currency {
     private String name;
@@ -10,6 +10,10 @@ public class Currency {
     public Currency(double exchangeValue, String name) {
         this.exchangeValue = exchangeValue;
         this.name = name;
+    }
+
+    public void adb () {
+
     }
 
     public double getExchangeValue() {

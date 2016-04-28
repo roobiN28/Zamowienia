@@ -4,8 +4,6 @@ import com.robin.model.Item;
 import org.junit.Assert;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 /**
  * Created by Rober on 17.03.2016.
  */
@@ -31,6 +29,7 @@ public class OrderGetterTest {
         Assert.assertEquals("Liczba zamowien",list.size(),6);
         Item item = list.get(list.size()-1).getListPackage().get(0).getItem();
         Assert.assertEquals("Pierwszy przedmiot w ostatnim zamowieniu",item.getName(), "lustro");
+
 
     }
 }
